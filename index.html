@@ -1,1 +1,102 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Yutong's home page</title>
+      <meta charset="utf-8">
+      <link rel="icon" href="img/icon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./index.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Expletus+Sans:400' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="#home" >Home</a>
+         <a href="#publications">Publications</a>
+         <a href="#projects">Projects</a>
+         <a href="doc/cv.pdf">Résumé</a>
+      </div>
+      <div id="main">
+      <span style="font-size:30px;cursor:pointer;font-family:'Expletus Sans';  position: fixed; top: 20px;" onclick="openNav()">&#9776; Menu</span>
+      <div class="article" id="home">
+         <h1>Welcome to my website!</h1>
+         <div style="float: left;
+            width: 40%;
+            text-align: center;
+            ">
+            <a href="#" class="photo">
+               <img src="img/yutong.jpg" />
+               <div class="glow-wrap">
+                  <i class="glow"></i>
+               </div>
+            </a>
+            <p>Email: yanyutong2014 -at- gmail.com</p>
+            <a href="https://github.com/melodiepupu" class="fa fa-github"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+         </div>
+         <div style="float: right;    width: 60%;
+            ">
+            <p>I am Yutong YAN.</p>
+            <p> I am currently a PhD student in <a href='http://latim.univ-brest.fr/indexc3ea.html?option=com_content&view=article&id=42&Itemid=100027&lang=fr'>LaTIM labotory</a>, <a href='https://www.imt-atlantique.fr/en'>IMT Atlantique</a>. I am studying computer vision, especially sementic segmentation and mammography segmentation.</p>
+            <p>Bla bla bla bla bla ...</p>
+         </div>
+      </div>
+      <div class="article" id="publications">
+         <h1>Publications</h1>
+         <div class="publications">
+            <p>nothing</p>
+         </div>
+         <div class="publications">
+            <p>nothing</p>
+         </div>
+         <div class="publications">
+            <p>nothing</p>
+         </div>
+      </div>
+      <div class="article" id="projects">
+         <h1>Porjects</h1>
+         <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                  <img src="img/seq_nms_yolo.jpg" alt="seq_nms_yolo" style="width:640px;height:360px;">
+               </div>
+               <div class="flip-card-back">
+                  <h2>Seq-NMS YOLO</h2>
+                  <p>This project combines YOLOv3 and Seq-NMS to realise real time video object detection.</p>
+                  <a href='https://github.com/ZHANGHeng19931123/seq_nms_yolo'>Github link</a>
+               </div>
+            </div>
+         </div>
+         <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                  <img src="img/emotateur.jpg" alt="emotateur" style="width:640px;height:360px;">
+               </div>
+               <div class="flip-card-back">
+                  <h2>EMOTATEUR</h2>
+                  <p>It is a game designed to imitate other people's facial expressions and measure their similarity.</p>
+                  <a href='https://github.com/ZHANGHeng19931123/py_emotateur'>Github link</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         function openNav() {
+             document.getElementById("mySidenav").style.width = "250px";
+             document.getElementById("main").style.marginLeft = "250px";
+             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+         }
+         
+         function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+             document.getElementById("main").style.marginLeft= "0";
+             document.body.style.backgroundColor ='#ffdb74';
+         }
+      </script>
+   </body>
+</html>

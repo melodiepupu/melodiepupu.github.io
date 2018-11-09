@@ -1,0 +1,225 @@
+/* style title */
+ html{
+    scroll-behavior: smooth;
+}
+ h1 {
+     color: #252010;
+     font-family: 'Expletus Sans';
+     font-size: 48px;
+     font-weight: 400;
+     line-height: 60px;
+     margin-bottom: 48px;
+     letter-spacing: -1px;
+     text-transform: none;
+}
+ h2 {
+     color: #7c795d;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 28px;
+     font-weight: 400;
+     line-height: 32px;
+     margin: 0 0 24px;
+}
+ .subheader {
+     font-size: 26px;
+     font-weight: 300;
+     color: #252010;
+     margin: 0 0 24px;
+}
+ p {
+     color: #40371D;
+     font-family: 'Dosis';
+     font-size: 22px;
+     font-weight: 400;
+     line-height: 36px;
+     margin-bottom: 36px;
+}
+ .article{
+    padding:50px;
+    height:1080px;
+    border-bottom: 5px solid white;
+}
+ .article a{
+    /*text-decoration: none;
+    */
+     color: #5cd8b6;
+}
+ .article a:hover {
+}
+/* publications */
+ .publications {
+     background-color: #dddddd;
+     margin-bottom: 15px;
+     padding: 4px 12px;
+     border-left: 6px solid #40371D;
+     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+     transition: 1s;
+}
+ .publications:hover {
+     box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+     background-color: #ccc;
+     transform: scale(0.98);
+}
+/* navbar */
+ body {
+     font-family: "Lato", sans-serif;
+     transition: background-color .5s;
+     background-color: #ffdb74;
+}
+ .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+     font-family: 'Expletus Sans';
+}
+ .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+}
+ .sidenav a:hover {
+     color: #f1f1f1;
+}
+ .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+}
+ #main {
+     transition: margin-left .5s;
+     padding: 16px;
+}
+ @media screen and (max-height: 450px) {
+     .sidenav {
+        padding-top: 15px;
+    }
+     .sidenav a {
+        font-size: 18px;
+    }
+}
+/* table */
+ table {
+     font-family: arial, sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+     transition: 1s;
+}
+ table:hover {
+     box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+     transform: scale(0.98);
+}
+ td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 20px;
+}
+ th {
+     background-color: #40371D;
+     color: white;
+}
+ tr:nth-child(even) {
+     background-color: #dddddd;
+}
+ tr:hover {
+     background-color:#ccc;
+}
+/* card */
+ .flip-card {
+     background-color: transparent;
+     width: 640px;
+     height: 360px;
+     padding: 20px;
+     margin-left: auto;
+     margin-right: auto;
+    display: block;
+}
+ .flip-card-inner {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.6s;
+     transform-style: preserve-3d;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+ .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
+}
+ .flip-card-front, .flip-card-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+}
+ .flip-card-front {
+     background-color: #bbb;
+     color: black;
+     z-index: 2;
+}
+ .flip-card-back {
+     background-color: #ffdb74;
+     color: white;
+     transform: rotateY(180deg);
+     z-index: 1;
+     padding-top: 40px;
+}
+/* image animation */
+ .photo img{
+     width: 200px;
+     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+     transition: 1s;
+     border-radius: 10px;
+}
+ .photo:hover img{
+     box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+     transform: scale(0.98);
+}
+/* social icons */
+ .fa {
+     padding: 15px;
+     font-size: 20px;
+     width: 20px;
+     height: 20px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 50%;
+     transition: 1s;
+}
+ .fa:hover {
+     opacity: 0.7;
+     transform: scale(1.1);
+}
+ .fa-facebook {
+     background: #3B5998;
+     color: white;
+}
+ .fa-linkedin {
+     background: #007bb5;
+     color: white;
+}
+ .fa-youtube {
+     background: #bb0000;
+     color: white;
+}
+ .fa-github {
+     background: #000000;
+     color: white;
+}
+ .fa-instagram {
+     background: #125688;
+     color: white;
+}
+ 
