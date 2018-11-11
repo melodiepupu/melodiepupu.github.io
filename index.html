@@ -2,101 +2,103 @@
 <html lang="en">
    <head>
       <title>Yutong's home page</title>
-      <meta charset="utf-8">
-      <link rel="icon" href="img/icon.png">
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="./index.css">
+      <link href='index.css' rel='stylesheet' type='text/css'>
+      <link href='animate.css' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href='https://fonts.googleapis.com/css?family=Expletus+Sans:400' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
    </head>
    <body>
-      <div id="mySidenav" class="sidenav">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="#home" >Home</a>
+      <div class="header pulse animated">
+         <h1>Yutong's home page</h1>
+         <p>Welcome to my site!<p>
+      </div>
+      <div class="navbar">
+         <a href="#" class="active">Home</a>
          <a href="#publications">Publications</a>
          <a href="#projects">Projects</a>
-         <a href="doc/cv.pdf">Résumé</a>
+         <a href="doc/cv.pdf" class="right">Résumé</a>
       </div>
-      <div id="main">
-      <span style="font-size:30px;cursor:pointer;font-family:'Expletus Sans';  position: fixed; top: 20px; left: 20px;" onclick="openNav()">&#9776; Menu</span>
-      <div class="article" id="home">
-         <h1>Welcome to my website!</h1>
-         <div style="float: left;
-            width: 40%;
-            text-align: center;
-            ">
-            <a href="#" class="photo">
-               <img src="img/yutong.jpg" />
-               <div class="glow-wrap">
-                  <i class="glow"></i>
-               </div>
-            </a>
+      <div class="row">
+         <div class="side">
+            <img class="photo" width=60% src="img/yutong.jpg"/>
+            <h3>Yutong YAN (闫 雨童)</h3>
             <p>Email: yanyutong2014 -at- gmail.com</p>
+            <h2 align="left" >Find me</h2>
             <a href="https://github.com/melodiepupu" class="fa fa-github"></a>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-youtube"></a>
             <a href="#" class="fa fa-instagram"></a>
          </div>
-         <div style="float: right;    width: 60%;
-            ">
-            <p>I am Yutong YAN.</p>
-            <p> I am currently a PhD student in <a href='http://latim.univ-brest.fr/indexc3ea.html?option=com_content&view=article&id=42&Itemid=100027&lang=fr'>LaTIM labotory</a>, <a href='https://www.imt-atlantique.fr/en'>IMT Atlantique</a>. I am studying computer vision, especially sementic segmentation and mammography segmentation.</p>
-            <p>Bla bla bla bla bla ...</p>
-            <p>Bla bla bla bla bla ...</p>
-         </div>
-      </div>
-      <div class="article" id="publications">
-         <h1>Publications</h1>
-         <div class="publications">
-            <p>nothing</p>
-         </div>
-         <div class="publications">
-            <p>nothing</p>
-         </div>
-         <div class="publications">
-            <p>nothing</p>
-         </div>
-      </div>
-      <div class="article" id="projects">
-         <h1>Porjects</h1>
-         <div class="flip-card">
-            <div class="flip-card-inner">
-               <div class="flip-card-front">
-                  <img src="img/seq_nms_yolo.jpg" alt="seq_nms_yolo" style="width:640px;height:360px;">
-               </div>
-               <div class="flip-card-back">
-                  <h2>Seq-NMS YOLO</h2>
-                  <p>This project combines YOLOv3 and Seq-NMS to realise real time video object detection.</p>
-                  <a href='https://github.com/ZHANGHeng19931123/seq_nms_yolo'>Github link</a>
+         <div class="main">
+            <h2>Short Bio</h2>
+            <img class="photo" width=30% src="img/ubo.jpg"/>
+            <p>My name is Yutong YAN. I am currently a PhD student in <a href='http://latim.univ-brest.fr/indexc3ea.html?option=com_content&view=article&id=42&Itemid=100027&lang=fr'>LaTIM laboratory</a>, <a href='https://www.imt-atlantique.fr/en'>IMT Atlantique</a> & <a href='https://en.wikipedia.org/wiki/University_of_Western_Brittany'>University of Western Brittany</a>.</p>
+            <p>I am studying <b>computer vision</b>, especially <b>sementic segmentation</b> and <b>mammography segmentation</b>.</p>
+            <p>I was an engineer student between 2015 and 2018 in <a href='https://en.wikipedia.org/wiki/T%C3%A9l%C3%A9com_Saint-%C3%89tienne'>Telecom Saint-Etienne</a>, <a href='https://en.wikipedia.org/wiki/Jean_Monnet_University'>University Jean Monnet</a>.</p>
+            <br>
+            <h2 id="publications">Publications</h2>
+            <button class="accordion">Paper 1</button>
+            <div class="panel">
+               <p>Nothing.</p>
+            </div>
+            <button class="accordion">paper 2</button>
+            <div class="panel">
+               <p>Nothing.</p>
+            </div>
+            <button class="accordion">paper 3</button>
+            <div class="panel">
+               <p>Nothing.</p>
+            </div>
+            <h2 id="projects">Projects</h2>
+            <div class="responsive">
+               <div class="gallery">
+                  <a target="_blank" href="img/seq_nms_yolo.jpg">
+                  <img src="img/seq_nms_yolo.jpg" alt="seq_nms_yolo" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                     <h4>Seq-NMS-YOLO</h4>
+                     <p>This project combines YOLOv3 and Seq-NMS to realise real time video object detection.</p>
+                     <button class="button" style="vertical-align:middle"><span>
+                     <a href="https://github.com/ZHANGHeng19931123/seq_nms_yolo" style="text-decoration:none;color:black">Github link</a>
+                     </span></button>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="flip-card">
-            <div class="flip-card-inner">
-               <div class="flip-card-front">
-                  <img src="img/emotateur.jpg" alt="emotateur" style="width:640px;height:360px;">
-               </div>
-               <div class="flip-card-back">
-                  <h2>EMOTATEUR</h2>
-                  <p>It is a game designed to imitate other people's facial expressions and measure their similarity.</p>
-                  <a href='https://github.com/ZHANGHeng19931123/py_emotateur'>Github link</a>
+            <div class="responsive">
+               <div class="gallery">
+                  <a target="_blank" href="img/emotateur.jpg">
+                  <img src="img/emotateur.jpg" alt="emotateur" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                     <h4>EMOTATEUR</h4>
+                     <p>It is a game designed to imitate other people's facial expressions and measure their similarity.</p>
+                     <button style="vertical-align:middle"><span>
+                     <a href="https://github.com/ZHANGHeng19931123/py_emotateur" style="text-decoration:none;color:black">Github link</a>
+                     </span></button>
+                  </div>
                </div>
             </div>
+            <div class="clearfix"></div>
          </div>
       </div>
+
       <script>
-         function openNav() {
-             document.getElementById("mySidenav").style.width = "250px";
-             document.getElementById("main").style.marginLeft = "250px";
-             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-         }
+         var acc = document.getElementsByClassName("accordion");
+         var i;
          
-         function closeNav() {
-             document.getElementById("mySidenav").style.width = "0";
-             document.getElementById("main").style.marginLeft= "0";
-             document.body.style.backgroundColor ='#ffdb74';
+         for (i = 0; i < acc.length; i++) {
+           acc[i].addEventListener("click", function() {
+             this.classList.toggle("accordion_active");
+             var panel = this.nextElementSibling;
+             if (panel.style.maxHeight){
+               panel.style.maxHeight = null;
+             } else {
+               panel.style.maxHeight = panel.scrollHeight + "px";
+             } 
+           });
          }
       </script>
    </body>
