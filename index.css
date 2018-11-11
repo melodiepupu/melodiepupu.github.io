@@ -297,7 +297,7 @@ div.desc {
 .responsive {
 	padding: 0 6px;
 	float: left;
-	width: 24.99999%;
+	width: 49.99999%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -317,4 +317,40 @@ div.desc {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+/*------------- fly fruit -------------*/
+
+@keyframes slidein {
+	0% {
+		margin-right: 20px;
+		transform: scaleX(-1);
+	}
+	49% {
+		margin-right: 79%;
+		transform: scaleX(-1);
+	}
+	50% {
+		margin-right: 80%;
+		transform: scaleX(1);
+	}
+	51% {
+		margin-right: 79%;
+		transform: scaleX(1);
+	}
+	99% {
+		margin-right: 20px;
+		transform: scaleX(1);
+	}
+	100% {
+		margin-right: 20px;
+		transform: scaleX(-1);
+	}
+}
+
+#fruit {
+	border-radius: 50%;
+	animation: slidein 20s infinite;
+	height: 80px;
+	display: none;
 }

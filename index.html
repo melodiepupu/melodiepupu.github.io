@@ -22,7 +22,7 @@
       </div>
       <div class="row">
          <div class="side">
-            <img class="photo" width=60% src="img/yutong.jpg"/>
+            <img class="photo" width=60% src="img/yutong.jpg" onclick="showFunction()"/>
             <h3>Yutong YAN (闫 雨童)</h3>
             <p>Email: yanyutong2014 -at- gmail.com</p>
             <h2 align="left" >Find me</h2>
@@ -31,6 +31,8 @@
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-youtube"></a>
             <a href="#" class="fa fa-instagram"></a>
+            <br/>
+            <img src="img/fruit.gif" align="right" id="fruit"/>
          </div>
          <div class="main">
             <h2>Short Bio</h2>
@@ -100,6 +102,16 @@
              } 
            });
          }
+
+function showFunction() {
+	var x = document.getElementById("fruit");
+	if (x.style.display === "block") {
+		x.style.display = "none";
+	} else {
+		x.style.display = "block";
+	}
+}
+
       </script>
    </body>
 </html>
