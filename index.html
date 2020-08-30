@@ -1,117 +1,100 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
-      <title>Yutong's home page</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href='index.css' rel='stylesheet' type='text/css'>
-      <link href='animate.css' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href='https://fonts.googleapis.com/css?family=Expletus+Sans:400' rel='stylesheet' type='text/css'>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>Home page</title>
+      <link rel="icon" href="img/fruit.gif">
+      <link rel="stylesheet" href="index.css">
    </head>
    <body>
-      <div class="header pulse animated">
-         <h1>Yutong's home page</h1>
-         <p>Welcome to my site!<p>
-      </div>
-      <div class="navbar">
-         <a href="#" class="active">Home</a>
-         <a href="#publications">Publications</a>
-         <a href="#projects">Projects</a>
-         <a href="doc/cv.pdf" class="right">Résumé</a>
-      </div>
-      <div class="row">
-         <div class="side">
-            <img class="photo" width=60% src="img/yutong.jpg" onclick="showFunction()"/>
-            <h3>Yutong YAN (闫 雨童)</h3>
-            <p>Email: yanyutong2014 -at- gmail.com</p>
-            <h2 align="left" >Find me</h2>
-            <a href="https://github.com/melodiepupu" class="fa fa-github"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <br/>
-            <img src="img/fruit.gif" align="right" id="fruit"/>
+      <div id="navigation">
+         <div id="profile">
+            <a href="#"><img src="img/yutong2.jpg"></a>
          </div>
-         <div class="main">
-            <h2>Short Bio</h2>
-            <img class="photo" width=30% src="img/ubo.jpg"/>
-            <p>My name is Yutong YAN. I am currently a PhD student in <a href='http://latim.univ-brest.fr/indexc3ea.html?option=com_content&view=article&id=42&Itemid=100027&lang=fr'>LaTIM laboratory</a>, <a href='https://www.imt-atlantique.fr/en'>IMT Atlantique</a> & <a href='https://en.wikipedia.org/wiki/University_of_Western_Brittany'>University of Western Brittany</a>.</p>
-            <p>I am studying <b>computer vision</b>, especially <b>sementic segmentation</b> and <b>mammography segmentation</b>.</p>
-            <p>I was an engineer student between 2015 and 2018 in <a href='https://en.wikipedia.org/wiki/T%C3%A9l%C3%A9com_Saint-%C3%89tienne'>Telecom Saint-Etienne</a>, <a href='https://en.wikipedia.org/wiki/Jean_Monnet_University'>University Jean Monnet</a>.</p>
-            <br>
-            <h2 id="publications">Publications</h2>
-            <button class="accordion">Paper 1</button>
-            <div class="panel">
-               <p>Nothing.</p>
-            </div>
-            <button class="accordion">paper 2</button>
-            <div class="panel">
-               <p>Nothing.</p>
-            </div>
-            <button class="accordion">paper 3</button>
-            <div class="panel">
-               <p>Nothing.</p>
-            </div>
-            <h2 id="projects">Projects</h2>
-            <div class="responsive">
-               <div class="gallery">
-                  <a target="_blank" href="img/seq_nms_yolo.jpg">
-                  <img src="img/seq_nms_yolo.jpg" alt="seq_nms_yolo" width="600" height="400">
-                  </a>
-                  <div class="desc">
-                     <h4>Seq-NMS-YOLO</h4>
-                     <p>This project combines YOLOv3 and Seq-NMS to realise real time video object detection.</p>
-                     <button class="button" style="vertical-align:middle"><span>
-                     <a href="https://github.com/ZHANGHeng19931123/seq_nms_yolo" style="text-decoration:none;color:black">Github link</a>
-                     </span></button>
-                  </div>
-               </div>
-            </div>
-            <div class="responsive">
-               <div class="gallery">
-                  <a target="_blank" href="img/emotateur.jpg">
-                  <img src="img/emotateur.jpg" alt="emotateur" width="600" height="400">
-                  </a>
-                  <div class="desc">
-                     <h4>EMOTATEUR</h4>
-                     <p>It is a game designed to imitate other people's facial expressions and measure their similarity.</p>
-                     <button style="vertical-align:middle"><span>
-                     <a href="https://github.com/ZHANGHeng19931123/py_emotateur" style="text-decoration:none;color:black">Github link</a>
-                     </span></button>
-                  </div>
-               </div>
-            </div>
-            <div class="clearfix"></div>
+         <div id="contact">
+            <h1>
+            Yutong <span class="upper">YAN</span></h2>
+            <h2 id="title" class="italic"> PhD student</h2>
+            <p> yan.yutong -AT- imt-atlantique.fr</p>
+            <p>Brest, France</p>
+            <p class="link">
+               <a href="https://github.com/melodiepupu/"><img id="github" src="img/github.png" class="external"></a>
+               <a href="https://scholar.google.com/citations?user=0eumHcIAAAAJ&hl=en"><img id="scholar" src="img/scholar.png" class="external"></a>
+               <a href="https://www.linkedin.com/in/yutong-yan-profil/"><img id="linkedin" src="img/linkedin.png" class="external"></a>
+               <a href="doc/cv.pdf"><img id="cv" src="img/cv.png" class="external"></a>
+            </p>
          </div>
       </div>
-
+      <div id="content">
+         <div id="intro">
+            <h2 id="first">About me</h2>
+            I am a second year PhD student in <a href="http://latim.univ-brest.fr/imagine">IMAGINE</a> team at <a href="http://latim.univ-brest.fr/">LaTIM</a> laboratory. I am working under the supervision of Dr. <a href="https://www.imt-atlantique.fr/fr/personne/pierre-henri-conze">Pierre-Henri Conze</a> and Prof. <a href="https://www.doctolib.fr/ophtalmologue/brest/beatrice-cochener">Béatrice Cochener</a>. My current research interest is deep learning for <b>medical image processing</b>, including mammographic and ophtalmologic image processing and information fusion.
+            <p style="text-align:right;">
+               <a href="https://www.univ-brest.fr/GB"><img src="img/ubo.png" height="50"/></a>
+               <a href="http://latim.univ-brest.fr/"><img src="img/latim.png" height="50"/></a>
+               <a href="https://www.imt-atlantique.fr/en"><img src="img/imt.png" height="50"/></a>
+            </p>
+         </div>
+         <div id="education">
+            <h2>Education</h2>
+            <ul>
+               <li>
+                  <p><span class="strong">Ph.D. student in Medical Image Processing</span></p>
+                  <p>Université de Bretagne Occidentale | Brest, France | Oct. 2018 - ?? </p>
+                  <div class="additional-text">
+                     <p>&#9646 Subject: Image analysis by deep learning for longitudinal monitoring of pathologies.</p>
+                  </div>
+               </li>
+               <li>
+                  <p><span class="strong">Engineer's degree</span></p>
+                  <p>Télécom Saint-Etienne | Saint-Etienne, France | Sep. 2015 - Oct. 2018</p>
+                  <div class="additional-text">
+                     <p>&#9646 Major: Computer Science and Computer Vision</p>
+                     <p>&#9646 Six-month internship in LaTIM laboratory.</p>
+                  </div>
+               </li>
+               <li>
+                  <p><span class="strong">Bachelor's degree</span></p>
+                  <p>Xidian University | Xi'an, China | Sep. 2012 - Jun. 2016</p>
+                  <div class="additional-text">
+                     <p>&#9646 Major: Information security</p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div id="publication">
+            <h2>Conference Publications</h2>
+            <ul>
+               <li>
+                  <p><span class="strong">2020</span></p>
+                  <p><b>Yutong Yan</b>, Pierre-Henri Conze, Mathieu Lamard, Gwenolé Quellec, Béatrice Cochener, Gouenou Coatrieux<br>
+                     "Multi-tasking Siamese networks for breast mass detection using dual-view mammogram matching", in <i>MICCAI workshop MLMI 2020</i>. <a href="https://hal-imt-atlantique.archives-ouvertes.fr/hal-02913535/">[PDF]</a>
+                  </p>
+               </li>
+               <li>
+                  <p><span class="strong">2020</span></p>
+                  <p><b>Yutong Yan</b>, Pierre-Henri Conze, Gwenolé Quellec, Mathieu Lamard, Béatrice Cochener, Gouenou Coatrieux<br>
+                     "Two-stage breast mass detection and segmentation system towards automated high-resolution full mammogram analysis", arxiv preprint. <a href="https://arxiv.org/pdf/2002.12079.pdf">[PDF]</a>
+                  </p>
+               </li>
+               <li>
+                  <p><span class="strong">2019</span></p>
+                  <p><b>Yutong Yan</b>, Pierre-Henri Conze, Etienne Decencière, Mathieu Lamard, Gwenolé Quellec, Beatrice Cochener, Gouenou Coatrieux<br>
+                     "Cascaded multi-scale convolutional encoder-decoders for breast mass segmentation in high-resolution mammograms", in <i>EMBC 2019</i>. <a href="https://www.researchgate.net/profile/Yutong_Yan4/publication/336335489_Cascaded_multi-scale_convolutional_encoder-decoders_for_breast_mass_segmentation_in_high-resolution_mammograms/links/5db2c2524585155e27002061/Cascaded-multi-scale-convolutional-encoder-decoders-for-breast-mass-segmentation-in-high-resolution-mammograms.pdf">[PDF]</a>
+                  </p>
+               </li>
+            </ul>
+         </div>
+      </div>
       <script>
-         var acc = document.getElementsByClassName("accordion");
-         var i;
-         
-         for (i = 0; i < acc.length; i++) {
-           acc[i].addEventListener("click", function() {
-             this.classList.toggle("accordion_active");
-             var panel = this.nextElementSibling;
-             if (panel.style.maxHeight){
-               panel.style.maxHeight = null;
-             } else {
-               panel.style.maxHeight = panel.scrollHeight + "px";
-             } 
-           });
+         function PlaySound(melody) {
+         var path = "./files/"
+         var snd = new Audio(path + melody + ".mp3");
+         snd.play();
          }
-
-function showFunction() {
-	var x = document.getElementById("fruit");
-	if (x.style.display === "block") {
-		x.style.display = "none";
-	} else {
-		x.style.display = "block";
-	}
-}
-
       </script>
    </body>
 </html>
+
